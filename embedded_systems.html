@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <title>Federica Donald</title>
+  </head>
+  <body>
+    <div class="container-fluid px-0">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light">
+      <a class="navbar-brand" href="index.html"><span> <img id="brand" src="logo_size.jpg"></span>Federica Donald</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+
+    <div class="container px-0" id="page">
+      <h1>Embedded Systems Project</h1>
+      <div class="row">
+        <div class="col-lg-7">
+          <h6>During my second year at university we had to create an autononomous line following buggy. We were placed into groups of 5 and the project lasted the entire year with a race day at the end. We used Arduino microcontrollers.</h6>
+          <h3>First Semester</h3>
+          <p>In the first semester, the main goal was planning. Reports were written based off both hardware and software implementations we decided to use. We performed experiments to test the gear ratio required given the maximum incline of a ramp we would have to scale. Several calculations were performed in order to work this out. We also had to decide on the sensors that we would be using to detect the white line on the floor. We were told to consider interference of natural light to our readings. After thorough testing of multiple types of sesnsors we went with an IR sensor to remove daylight interference.</p>
+      </div>
+      <div class="col-lg-5 ">
+      <img src="diagram.png">
+      </div>
+      
+      <p id="esp-text">In the second report we evaluated the different types of control systems we could use to implement the line following behavior. In the end we decided to go with a PID controller as we believed it gave us the opportunity to gain the smoothest response instead of an on-off control system.</p>
+      <p id="esp-text">In addition to the gear ratios we also decided on the material the buggy would be made out of and the dimensions of the main surface. To come to this decision we put different materials under simulation given an approximation of the weight of all the components we would need to successfully run the buggy. Our final CAD model can be seen in the first picture.</p>
+      
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-lg-9">
+          <h3>Second Semester</h3>
+          <p>The main aim of second semester was getting the buggy to work. At the start this consisted of building the buggy. In order to work optimally as a team we split off into hardware/software groups. I was part of the software and we started to work on the initial foundations of the code we would need. To do this, we used the mbed IDE.</p>
+          <p>Our first step was to get the motor working and make our buggy go forward for a set amount of time. We interfaced the controller with the correct pins in the motor board and got our motor to work. We quickly realised that our motor speed was very dependant on the charge in the batteries - an issue we would find difficult to deal with as time went on.</p>
+          <p>Our first assessment was driving around a square outlined on the floor. We used our previous 'forwards' code and then developed left turns. We went for a loop approach where a turn was made after we went forward. However, we discovered that our delays would not allow our square to be completed perfectly as the batteries had lost some charge during our testing.</p>
+        </div>
+        <div class="col-lg-3">
+          <img src="award.jpeg" alt="Image" height="300" width="200">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-5 pr-0">
+          <img id="final" src="final.jpeg">
+        </div>
+        <div class="col-lg-7 pl-0">
+          <p>After this hiccup, we moved onto the sensors interface and PID controller code. A ramp was created in the labs and once the controller was responsive we got to testing the different constants required for our desired behavior. During the testing stage we discovered that only a PD controller was neccessary for our function.</p>
+          <p>Our final buggy can be seen in the 2nd photo.</p>
+          <p>During the race day, everyone had to go round a short track which evaluted our buggy to the specification we were given at the start. The video of our buggy completing this can be seen at the bottom. We also decided to implement an optional function of estimating the track length. We won the prize for this estimation as we got the closest to the true length out of the entire year. The photo of the team holding our awards can be seen too.</p>
+        </div> 
+      </div>
+      <div class="row">
+        <div class="col-lg-8 pt-2">
+      <p>After the compulsory testing, there was a much larger track which for fun everyone who passed the smaller track could complete. This track determined the fastest buggy in the cohort. Unfortunately, our buggy failed at the strobe lighting as it struggled to pick up the true direction of the line.</p>
+      <p>I think this project was a great experience for me as it was my first big team exercise. I enjoyed working with the group as we worked well and bounced off eachother well. Our personalities complemented eachother very well and we all took on equal responsibility. If I were to do this task again I would research how strobe lighting would impact our sensors and find a way to get around them. I would also implement the control system for the sensors sooner as this was a big part of the final project.</p>
+      </div>
+    <div class="col-lg-4">
+      <video width="420" height="240" controls>
+            <source src="working.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+    </div>
+    </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

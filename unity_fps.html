@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <title>Federica Donald</title>
+  </head>
+  <body>
+    <div class="container-fluid px-0">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light">
+      <a class="navbar-brand" href="index.html"><span> <img id="brand" src="logo_size.jpg"></span>Federica Donald</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+
+    <div class="container" id="page">
+      <h1>Unity 3D First Person Shooter</h1>
+
+      <div class="row">
+        <div class="col-lg-5">
+          <video width="420" height="240" controls>
+            <source src="fps.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="col-lg-7 px-0">
+          <p>The video to the left shows gameplay of a game I made using Unity 3D. The game is a First Person Shooter, complete with two variants of enemies: Zombies and Boars. I used Github to find the assets needed for the game which included animations and material textures.</p>
+          <p>As I had experience using C and C++, I watched a unity 3D tutorial to learn how to implement features using C#. The transition over to C# was tricky at first, getting used to the differences between the languages I know already. However, after time, the prefabs became easier to complete as for the majority the basic behavior was the same for both player and enemy.</p>
+        </div>
+        </div>
+
+        <p>As the asset already had the terrarin, I started to create the player and set up the player movement using inputs from a keyboard. I then had to create the first person camera and assign a 'look around' script which used inputs from the mouse. Once the player could move around and explore the area without falling through the world I added player crouch and sprint settings which would increase the players movement speed from an input on the keyboard. I then added the player sounds for crunching of the grass as the player switched between movement speeds.</p>
+        <p>I then animated the player hand and the weapons. I used 6 types of weapons, 1 close range and 5 long range. I had to create a weapon handler which altered the attributes of each of the weapons and allowed the player to switch between the weapons using numerical keys on their keyboard. I then had to create a script for the player interface with the weapons and how the player would shoot or attack based on which range the weapon had.</p>
+        <p>I created a zoom animation which allowed the player to see a more focused viewpoint based off an input. This would be useful for the guns which required more precision. I had difficulty implementing this function as I chose the right mouse key for this function. As I was doing this on a laptop, I found it struggled to multi-task 2 inputs from my mouse pad. I chose a keyboard key to perform the zoom function as a result in order to test its functionality</p>
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+        <p>I then created a prefab for the bullet and arrows which would eventually damage the enemies. Next I moved onto creating the enemy prefab, dictating their behavior and creating their animation changes based off reactions from the player. The enemy controller script had to be reactive to chase the player once it had been attacked or once the player was in a certain radius. I then did the same with the boar enemy. I then had to create the script to randomly spawn a set amount of enemies from certain areas around the map.</p>
+        <p>Finally, I added health and stamina bars to the top of the game. This showed the player how much damage they had taken and how much stamina they lost from sprinting. </p>
+        <p>I think this game was a great first start to my interest in games development and creative use of my technical skills. I learnt about physics in game play and alot about character controllers and collisions. The aspects I struggled with were the animations as it was a completely new concept to me however I found it very satisfying once it had been completed. In the future I would like to make a game which experiments around the use of physics in game development. I would also like to try out Unreal Engine 4 as this game engine uses C++, a language that I am more confident with.</p>
+          </div>
+        <div class="col-lg-3 align-top">
+          <img id="cannibal" src="cannibal.png" width = 200px height = 200px>
+        
+        </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
