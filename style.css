@@ -4,6 +4,10 @@ body{
 	position: relative;
 }
 
+html {
+	scroll-behavior: smooth;
+  }
+
 #profile{
 	height: 80%;
 	width: 70%;
