@@ -1,6 +1,35 @@
 body{
 	font-family: 'Quicksand', sans-serif;
 	background-size: cover;
+	position: relative;
+}
+
+#profile{
+	height: 80%;
+	width: 70%;
+	border-radius: 50%;
+}
+
+hr{
+	border:none;
+  	height: 20px;
+ 	width: 70%;
+	height: 50px;
+	border-bottom: 1px solid steelblue;
+	box-shadow: 0 20px 20px -20px #333;
+  	margin: 50px auto 10px; 
+}
+
+#home{
+	padding-top: 100px;
+}
+
+.display-1{
+	font-size: 600%;
+}
+
+#stack{
+	padding-top:100px;
 }
 
 html, body {
@@ -8,7 +37,7 @@ html, body {
 }
 
 #page{
-	padding-top:50px;
+	padding-top:100px;
 }
 
 #linkedin {
@@ -32,17 +61,8 @@ html, body {
     height: 50px;
 }
 
-img {
-	object-fit:scale-down;
-    height: 300px;
-}
-
 img #cannibal{
 	height:200px;
-}
-
-.card{
-	margin-top: 50px;
 }
 
 #final {
@@ -54,3 +74,34 @@ img #cannibal{
 	margin-right:15px;
 }
 
+body,html{
+    height: 100%;
+    margin: 0;
+}
+
+h1{
+	display: inline;
+	padding: 20px;
+	margin-left: 15px;
+	font-size: 8rem;
+}
+
+a i{
+	font-size:4rem;
+	padding: 5px;
+}
+
+#backbtn{
+	display: block;
+}
+
+.end{
+	margin-bottom: 100px;;
+}
+
+@media screen and (max-width:994px){
+	h1{
+		font-size: 5rem;
+		display: inline;
+	}
+}
