@@ -13,28 +13,11 @@
     <title>Federica Donald</title>
   </head>
   <body>
-    <div class="container-fluid px-0">
-    <nav class="navbar navbar-expand-lg bg-white navbar-light">
-      <a class="navbar-brand" href="index.html"><span> <img id="brand" src="logo_size.jpg"></span>Federica Donald</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    </div>
-
+    
     <div class="container px-0" id="page">
-      <h1>Embedded Systems Project</h1>
+      <button id="backbtn" type="button" class="btn btn-outline-success">Back to home</button>
+      <h1 class="display-3">Embedded Systems Project</h1>
       <div class="row">
         <div class="col-lg-7">
           <h6>During my second year at university we had to create an autononomous line following buggy. We were placed into groups of 5 and the project lasted the entire year with a race day at the end. We used Arduino microcontrollers.</h6>
@@ -42,9 +25,8 @@
           <p>In the first semester, the main goal was planning. Reports were written based off both hardware and software implementations we decided to use. We performed experiments to test the gear ratio required given the maximum incline of a ramp we would have to scale. Several calculations were performed in order to work this out. We also had to decide on the sensors that we would be using to detect the white line on the floor. We were told to consider interference of natural light to our readings. After thorough testing of multiple types of sesnsors we went with an IR sensor to remove daylight interference.</p>
       </div>
       <div class="col-lg-5 ">
-      <img src="diagram.png">
+      <img width="420" height="240" src="diagram.png">
       </div>
-      
       <p id="esp-text">In the second report we evaluated the different types of control systems we could use to implement the line following behavior. In the end we decided to go with a PID controller as we believed it gave us the opportunity to gain the smoothest response instead of an on-off control system.</p>
       <p id="esp-text">In addition to the gear ratios we also decided on the material the buggy would be made out of and the dimensions of the main surface. To come to this decision we put different materials under simulation given an approximation of the weight of all the components we would need to successfully run the buggy. Our final CAD model can be seen in the first picture.</p>
       
@@ -63,7 +45,7 @@
       </div>
       <div class="row">
         <div class="col-lg-5 pr-0">
-          <img id="final" src="final.jpeg">
+          <img width="420" height="240" id="final" src="final.jpeg">
         </div>
         <div class="col-lg-7 pl-0">
           <p>After this hiccup, we moved onto the sensors interface and PID controller code. A ramp was created in the labs and once the controller was responsive we got to testing the different constants required for our desired behavior. During the testing stage we discovered that only a PD controller was neccessary for our function.</p>
@@ -85,7 +67,11 @@
     </div>
     </div>
 
-
+    <script>
+      document.getElementById("backbtn").onclick = function () {
+        location.href = "index.html";
+      };
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
