@@ -10,95 +10,183 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
 
-    <style type="text/css">
-      body{
-        background: url(background1.jpg);
-        background-size: 100%;
-        background-blend-mode: lighten;
-        background-repeat: no-repeat;
-        color: white;
-      }
-
-      @media screen and (max-width:850px){
-        #home h1{
-              font-weight: 100;
-              font-size: 30px;
-            }
-        #home h2{
-          font-weight: 100;
-          font-size: 25px;
-        }
-      }
-
-      @media screen and (max-width:650px){
-        #home h1{
-              font-weight: 100;
-              font-size: 0.7rem;
-            }
-        #home h2{
-          font-weight: 100;
-          font-size: 0.7rem;
-	  padding-bottom:0px;
-        }
-
-        #home{
-          margin-top:15px;
-        }
-
-        #portfoliobtn{
-          font-size: 10%;
-          line-height: 1;
-        }
-      }
-
-      #home{
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 50px;
-	      margin-top:100px;
-	      text-align: center;
-      }
-
-      
-    </style>
     <title>Federica Donald</title>
   </head>
   <body>
-    <div class="container-fluid px-0">
-    <nav class="navbar navbar-expand-lg bg-white navbar-light">
-      <a class="navbar-brand" href="index.html"><span> <img id="brand" src="logo_size.jpg"></span>Federica Donald</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
+    <div class="container-fluid px-0">
+    <nav id="navbar-example2" class="navbar navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#home"><span><img id="brand" src="logo_size.jpg"></span>Federica Donald</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#stack">Stack</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
     </nav>
+    
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+      <h4 id="home"></h4>
+      <div id = "home page" class="container text-center ">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img src="FD.jpg" id="profile" alt="" srcset="">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-1">Hello!</h1>
+            <h2>I'm Federica - a final year student from Manchester. I enjoy coding and I have created this website to showcase the projects I have worked on using my self-taught programming skills.</h2>
+          </div>  
+        </div>
+      </div>
+      <hr>
+
+      <h4 id="about"></h4>
+      <div class="container text-center" id="page">
+        <h1 class="display-3"><span><img id="brand-2" src="logo_size.jpg"></span>About me</h1>
+        <p>
+          I am a final year electrical and electronic engineering student studying at the University of Manchester. My passion for technology stems from childhood and carried on as I continued my academic career. 
+        </p>
+        <p>
+          The first coding language I attempted to learn was html and css for web development. I wanted to learn so I could modify aspects of my tumblr page when I was a teenager. I added in a couple of fancy features like a mouse trail and a music player but never learnt how powerful web development could be. 
+        </p>
+        <p>
+        For my A-Levels I took Computer Science. Here is where I first learnt about algorithms and key coding concepts and techniques. I always enjoyed the problem solving aspects of starting a new project and figuring out the direction your code would take. I especially enjoyed the feeling when everything slipped into place and your program ran without any errors.
+        </p>
+        <p>Later on in university, I had the opportunity to learn C and C++ through my modules and project work. I talk about my embedded systems project in my portfolio. This project was really key for my understanding of my entire degree as it tied together many theoretical concepts into a physical application.</p>
+        <p>Then comes COVID-19 and in April 2020 I started a Java Masterclass on Udemy. I had always wanted to learn Java due to its vast applications so I deciede to take a course. This course covered 80 hours worth of videos and covered everything right from the basics all the way to JavaFX and databases. I then took on a complete Web Developers bootcamp where I learnt the skills required for a web developer. This course is what gave me the technical foundations to create this website!</p>
+        <p>Currently, I am partaking in a C++ course to refresh my knowledge of that language. I hope to keep up the knowledge I have leant over the last couple of years and I hope you enjoy looking around my website</p>
+        <h4>All the best, Federica</h4>
+      </div>
+
+      <hr>
+
+      <div class="container text-center">
+        <h1 id="stack" class="display-3">Stack</h1>
+      </div>
+      <div class="container d-flex justify-content-center">  
+        <div class="row align-items-center">
+          <div class="col-lg-3 col-sm-2"><h1><i id="icons" class="devicon-bootstrap-plain"></i></h1></div>
+          <div class="col-lg-3 col-sm-2"><h1><i id="icons" class="devicon-cplusplus-plain"></i></h1></div>
+          <div class="col-lg-3 col-sm-2"><h1><i id="icons" class="devicon-css3-plain"></i></h1></div>
+          <div class="col-lg-3 col-sm-2"><h1><i id="icons" class="devicon-heroku-original"></i></h1></div>
+        </div>
+      </div>
+      <div class="container d-flex justify-content-center">
+        <div class="row align-items-center">
+          <div class="col-lg-3 col-sm-2"><h1><i id="icons" class="devicon-html5-plain"></i></h1></div>
+          <div class="col-lg-3 col-sm-2"><h1><i id="icons" class="devicon-java-plain"></i></h1></div>
+          <div class="col-lg-3 col-sm-2"><h1><i id="icons" class="devicon-javascript-plain"></i></h1></div>
+          <div class="col-lg-3 col-sm-2"><h1><i id="icons" class="devicon-jquery-plain"></i></h1></div>
+        </div>
+        </div>
+        <div class="container d-flex justify-content-center">
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-sm-2"><h1><i id="icons" class="devicon-mongodb-plain"></i></h1></div>
+          <div class="col-lg-4 col-sm-2"><h1><i id="icons" class="devicon-nodejs-plain"></i></h1></div>
+          <div class="col-lg-4 col-sm-2"><h1><i id="icons" class="devicon-visualstudio-plain"></i></h1></div>
+        </div>
+      </div>
+
+      <hr>
+
+
+      <h4 id="portfolio"></h4>
+      <div class="container">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="game.PNG" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Unity 3D: FPS</h5>
+              <p class="card-text">This is my first game I created using Unity 3D. It's a first person shooter.</p>
+              <button id="unitybtn"type="button" class="btn btn-outline-success">Learn more</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="final.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Embedded Systems Project</h5>
+              <p class="card-text">This is my 2nd year University project. It's an autonomous line following buggy</p>
+              <button id="embeddedbtn" type="button" class="btn btn-outline-success">Learn more</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="todolist.PNG" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>To Do List</h5>
+              <p>A to do-list that allowed me to practise effects and design.</p>
+              <button id="todobtn" type="button" class="btn btn-outline-success">Visit Website</button>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
 
+      <hr>
 
-    <div id="home" class="container">
-      <h1 class="display-1">Hello!</h1>
-      <h2>I'm Federica - a final year student from Manchester. I enjoy coding and I have created this website to showcase the projects I have worked on using my self-taught programming skills.</h2>
-      <button id="portfoliobtn" type="button" class="btn btn-outline-light">View Portfolio</button>
+      <h4 id="contact"></h4>
+      <div id="page" class="container">
+        <h1 class="display-3">Contact Information</h1>
+        <h4>You can email me below!</h4>
+        <form action="mailto:federicadonald98@gmail.com" method="post" enctype="text/plain">
+          Name:<br>
+          <input type="text" name="name"><br>
+          E-mail:<br>
+          <input type="email" name="mail"><br>
+          Comment:<br>
+          <input type="text" name="comment" size="50" required><br><br>
+          <input type="submit" value="Send">
+          <input type="reset" value="Reset">
+          </form>
+
+        <div class="end">
+          <br>
+          <h3>Alternatively you can contact me below:</h3>
+          <a href="https://www.linkedin.com/in/federica-donald-931241162/"><i class="devicon-linkedin-plain"></i></a>
+          <a href="https://github.com/fedtried"><i class="devicon-github-plain"></i></a>
+        </div>  
+      </div>
     </div>
 
     <script src="js/three.js"></script>
-
     <script type="text/javascript">
-      document.getElementById("portfoliobtn").onclick = function () {
-        location.href = "portfolio.html";
+
+      document.getElementById("embeddedbtn").onclick = function () {
+        location.href = "embedded_systems.html";
+      };
+
+      document.getElementById("unitybtn").onclick = function () {
+        location.href = "unity_fps.html";
+      };
+
+      document.getElementById("todobtn").onclick = function () {
+        location.href = "https://todolistfed.herokuapp.com/index.html";
       };
     </script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
