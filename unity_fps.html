@@ -13,29 +13,12 @@
     <title>Federica Donald</title>
   </head>
   <body>
-    <div class="container-fluid px-0">
-    <nav class="navbar navbar-expand-lg bg-white navbar-light">
-      <a class="navbar-brand" href="index.html"><span> <img id="brand" src="logo_size.jpg"></span>Federica Donald</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    </div>
 
     <div class="container" id="page">
-      <h1>Unity 3D First Person Shooter</h1>
 
+      <button id="backbtn" type="button" class="btn btn-outline-success">Back to home</button>
+      <h1 class="display-3">Unity 3D First Person Shooter</h1>
       <div class="row">
         <div class="col-lg-5">
           <video width="420" height="240" controls>
@@ -59,13 +42,17 @@
         <p>I think this game was a great first start to my interest in games development and creative use of my technical skills. I learnt about physics in game play and alot about character controllers and collisions. The aspects I struggled with were the animations as it was a completely new concept to me however I found it very satisfying once it had been completed. In the future I would like to make a game which experiments around the use of physics in game development. I would also like to try out Unreal Engine 4 as this game engine uses C++, a language that I am more confident with.</p>
           </div>
         <div class="col-lg-3 align-top">
-          <img id="cannibal" src="cannibal.PNG" width = 200px height = 200px>
+          <img id="cannibal" src="cannibal.png" width = 200px height = 200px>
         
         </div>
         </div>
     </div>
 
-
+    <script>
+      document.getElementById("backbtn").onclick = function () {
+        location.href = "index.html";
+      };
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
