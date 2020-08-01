@@ -109,3 +109,19 @@ a i{
 		display: inline;
 	}
 }
+
+@media screen and (max-width:746px){
+	.card-text{
+		font-size: 55%;
+	}
+	#todobtn{
+		font-size: 35%;
+	}
+	#embeddedbtn{
+		font-size: 35%;
+	}
+	#unitybtn{
+		font-size: 35%;
+	}
+}
+
