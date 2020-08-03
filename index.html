@@ -99,14 +99,17 @@
 
       <hr>
 
-
-      <h4 id="portfolio"></h4>
+      
+      <div class="container text-center">
+        <h1 id="portfolio" class="display-3">Portfolio</h1>
+      </div>
       <div class="container">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -129,8 +132,16 @@
             <img src="todolist.PNG" class="d-block w-100" alt="...">
             <div class="carousel-caption ">
               <h5>To Do List</h5>
-              <p class="card-text">A to do-list that allowed me to practise effects and design.</p>
+              <p class="card-text">A to do-list that allowed me to practise effects and CSS design.</p>
               <button id="todobtn" type="button" class="btn btn-outline-success">Visit Website</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="rgb.PNG" class="d-block w-100" alt="...">
+            <div class="carousel-caption ">
+              <h5>The Great RGB game</h5>
+              <p class="card-text">An RGB colour guessing game, practising event handling and CSS design</p>
+              <button id="rgbbtn" type="button" class="btn btn-outline-success">Visit Website</button>
             </div>
           </div>
         </div>
@@ -184,6 +195,10 @@
 
       document.getElementById("todobtn").onclick = function () {
         location.href = "https://todolistfed.herokuapp.com/index.html";
+      };
+
+      document.getElementById("rgbbtn").onclick = function () {
+        location.href = "https://fedtried.itch.io/first-random-game-project";
       };
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
