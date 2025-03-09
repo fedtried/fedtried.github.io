@@ -1,0 +1,187 @@
+/* Header */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba($tech-white, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: $spacing-sm 0;
+    
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-weight: 700;
+      font-size: $font-large;
+      color: $tech-blue;
+    }
+    
+    .main-nav {
+      ul {
+        display: flex;
+        list-style: none;
+        
+        li {
+          margin-left: $spacing-lg;
+          
+          a {
+            font-weight: 500;
+            position: relative;
+            
+            &:after {
+              content: '';
+              position: absolute;
+              bottom: -5px;
+              left: 0;
+              width: 0;
+              height: 2px;
+              background-color: $cosmic-purple;
+              transition: width 0.3s ease;
+            }
+            
+            &:hover:after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  /* Sections */
+  .hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    
+    .hero-content {
+      max-width: 600px;
+      z-index: 1;
+    }
+    
+    .tagline {
+      font-size: $font-large;
+      margin-bottom: $spacing-lg;
+    }
+    
+    .hero-cta {
+      display: flex;
+      gap: $spacing-md;
+    }
+    
+    .hero-visual {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      z-index: 0;
+    }
+    
+    .tech-constellation {
+      width: 100%;
+      height: 100%;
+      background-image: url('../images/constellation.svg');
+      background-size: cover;
+      opacity: 0.7;
+    }
+  }
+  
+  .about-section, .skills-section, .projects-section, .contact-section {
+    padding: $spacing-xl 0;
+  }
+  
+  .about-content {
+    display: flex;
+    gap: $spacing-xl;
+    
+    .about-text {
+      flex: 3;
+    }
+    
+    .about-image {
+      flex: 2;
+      
+      img {
+        border-radius: 8px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: $spacing-lg;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: $spacing-lg;
+  }
+  
+  .contact-content {
+    display: flex;
+    gap: $spacing-xl;
+    
+    .contact-text {
+      flex: 1;
+    }
+    
+    .contact-form {
+      flex: 2;
+      background-color: $tech-white;
+      border-radius: 8px;
+      padding: $spacing-lg;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .contact-methods {
+      margin-top: $spacing-lg;
+    }
+    
+    .contact-method {
+      display: flex;
+      align-items: center;
+      margin-bottom: $spacing-md;
+      
+      .method-icon {
+        margin-right: $spacing-sm;
+        font-size: 1.25rem;
+      }
+    }
+  }
+  
+  /* Footer */
+  .site-footer {
+    background-color: $tech-blue;
+    color: $tech-white;
+    padding: $spacing-lg 0;
+    
+    a {
+      color: $cosmic-orange;
+      
+      &:hover {
+        color: lighten($cosmic-orange, 10%);
+      }
+    }
+    
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .social-links {
+      display: flex;
+      gap: $spacing-md;
+    }
+  }

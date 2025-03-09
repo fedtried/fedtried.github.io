@@ -1,0 +1,147 @@
+/* Parallax and scroll animations */
+.parallax-container {
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  .parallax-element {
+    position: absolute;
+    will-change: transform;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  /* Fade In animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  .hero-content h1,
+  .hero-content .tagline,
+  .hero-content .hero-cta {
+    animation: slideUp 0.8s ease forwards;
+    opacity: 0;
+  }
+  
+  .hero-content h1 {
+    animation-delay: 0.2s;
+  }
+  
+  .hero-content .tagline {
+    animation-delay: 0.4s;
+  }
+  
+  .hero-content .hero-cta {
+    animation-delay: 0.6s;
+  }
+  
+  /* Scroll animations */
+.reveal {
+    opacity: 1; /* Start visible instead of hidden */
+    transform: translateY(0); /* No initial transform */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .reveal.animated {
+    /* Add .animated class with JS instead of .active */
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Tech-Astrology animated background */
+  .constellation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    background-image: 
+      radial-gradient(circle at 25% 25%, rgba(106, 72, 255, 0.2) 1px, transparent 1px),
+      radial-gradient(circle at 75% 75%, rgba(215, 109, 119, 0.2) 1px, transparent 1px),
+      radial-gradient(circle at 50% 50%, rgba(255, 175, 123, 0.2) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: constellation 20s linear infinite;
+  }
+  
+  @keyframes constellation {
+    0% {
+      background-position: 0 0, 0 0, 0 0;
+    }
+    100% {
+      background-position: 50px 50px, -50px 50px, 50px -50px;
+    }
+  }
+  
+  /* Cosmic gradient */
+  .cosmic-gradient {
+    background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Shooting star effect */
+  .shooting-star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 10px 1px white;
+    animation: shoot 5s linear infinite;
+    opacity: 0;
+  }
+  
+  .shooting-star:nth-child(1) {
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+  }
+  
+  .shooting-star:nth-child(2) {
+    top: 30%;
+    left: 70%;
+    animation-delay: 2s;
+  }
+  
+  .shooting-star:nth-child(3) {
+    top: 70%;
+    left: 20%;
+    animation-delay: 4s;
+  }
+  
+  @keyframes shoot {
+    0% {
+      transform: translate(0, 0) rotate(45deg) scale(0);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    20% {
+      transform: translate(100px, 100px) rotate(45deg) scale(1);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(100px, 100px) rotate(45deg) scale(1);
+      opacity: 0;
+    }
+  }

@@ -1,0 +1,59 @@
+/* Responsive styles */
+@media (max-width: $breakpoint-lg) {
+    .hero-section {
+      .hero-visual {
+        width: 40%;
+      }
+    }
+    
+    .about-content,
+    .contact-content {
+      flex-direction: column;
+    }
+    
+    .about-image {
+      margin-top: $spacing-lg;
+    }
+  }
+  
+  @media (max-width: $breakpoint-md) {
+    .site-header {
+      .main-nav {
+        display: none; /* We'll need to add a mobile menu later */
+      }
+    }
+    
+    .hero-section {
+      .hero-visual {
+        display: none;
+      }
+      
+      .hero-content {
+        max-width: 100%;
+      }
+    }
+    
+    .skills-grid,
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: $breakpoint-sm) {
+    h1 {
+      font-size: 2rem;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+    
+    .hero-cta {
+      flex-direction: column;
+      gap: $spacing-sm;
+      
+      .btn {
+        width: 100%;
+      }
+    }
+  }

@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<article class="project-detail">
+  <header class="project-header">
+    <h1>{{ page.title }}</h1>
+    <p class="project-meta">
+      {% if page.role %}{{ page.role }}{% endif %}
+      {% if page.role and page.duration %} • {% endif %}
+      {% if page.duration %}{{ page.duration }}{% endif %}
+    </p>
+  </header>
+  
+  <div class="project-content">
+    {% if page.skills %}
+    <div class="project-skills">
+      {% for skill in page.skills %}
+      <span class="skill-tag">{{ skill }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+    
+    {% if page.overview %}
+    <div class="key-points">
+      <h3>Project Overview</h3>
+      <p>{{ page.overview }}</p>
+    </div>
+    {% endif %}
+    
+    {{ content }}
+    
+    {% if page.stats %}
+    <div class="project-stats">
+      {% for stat in page.stats %}
+      <div class="stat">
+        <div class="stat-value">{{ stat.value }}</div>
+        <div class="stat-label">{{ stat.label }}</div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  
+  <a href="{{ '/' | relative_url }}#projects" class="back-link">← Back to all projects</a>
+</article>

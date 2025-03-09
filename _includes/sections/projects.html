@@ -1,0 +1,29 @@
+<section id="projects" class="projects-section">
+    <div class="container">
+      <h2>Project Showcase</h2>
+      <div class="projects-grid">
+        {% assign projects = site.projects | sort: 'date' | reverse %}
+        {% for project in projects %}
+        <div class="project-card">
+          <div class="project-thumbnail">
+            {% if project.thumbnail %}
+            <img src="{{ project.thumbnail | relative_url }}" alt="{{ project.title }}" />
+            {% else %}
+            <div class="thumbnail-placeholder"></div>
+            {% endif %}
+          </div>
+          <div class="project-info">
+            <h3>{{ project.title }}</h3>
+            <p class="project-role">{{ project.role }}</p>
+            <div class="project-skills">
+              {% for skill in project.skills limit:3 %}
+              <span class="skill-tag">{{ skill }}</span>
+              {% endfor %}
+            </div>
+            <a href="{{ project.url | relative_url }}" class="project-link">View Details</a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>

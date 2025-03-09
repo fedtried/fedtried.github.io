@@ -1,0 +1,119 @@
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: $spacing-sm $spacing-lg;
+    border-radius: 4px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    
+    &.btn-primary {
+      background-color: $tech-blue;
+      color: $tech-white;
+      
+      &:hover {
+        background-color: darken($tech-blue, 10%);
+      }
+    }
+    
+    &.btn-secondary {
+      background-color: transparent;
+      color: $tech-blue;
+      border: 2px solid $tech-blue;
+      
+      &:hover {
+        background-color: rgba($tech-blue, 0.1);
+      }
+    }
+  }
+  
+  /* Cards */
+  .skill-card {
+    background-color: $tech-white;
+    border-radius: 8px;
+    padding: $spacing-lg;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .skill-icon {
+      font-size: 2rem;
+      margin-bottom: $spacing-md;
+    }
+  }
+  
+  .project-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .project-thumbnail {
+      height: 200px;
+      background-color: $cosmic-purple;
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .thumbnail-placeholder {
+        height: 100%;
+        background: linear-gradient(135deg, $tech-blue, $cosmic-purple);
+      }
+    }
+    
+    .project-info {
+      padding: $spacing-md;
+    }
+    
+    .project-skills {
+      margin: $spacing-sm 0;
+    }
+    
+    .skill-tag {
+      display: inline-block;
+      background-color: rgba($cosmic-purple, 0.1);
+      color: $cosmic-purple;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: $font-small;
+      margin-right: 5px;
+    }
+    
+    .project-link {
+      display: inline-block;
+      margin-top: $spacing-sm;
+      font-weight: 600;
+    }
+  }
+  
+  /* Forms */
+  .form-group {
+    margin-bottom: $spacing-md;
+    
+    label {
+      display: block;
+      margin-bottom: $spacing-xs;
+    }
+    
+    input, textarea {
+      width: 100%;
+      padding: $spacing-sm;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: inherit;
+    }
+  }
