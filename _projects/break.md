@@ -1,8 +1,8 @@
 ---
 layout: project
 title: "Break Buddy: Smarter Work Breaks"
-role: "Founder"
-duration: "Ongoing"
+role: "Indie"
+duration: "Beta"
 thumbnail: "/assets/images/projects/break-buddy-thumb.png"
 skills: ["Product Strategy", "UX Design", "iOS Development", "Wellbeing & Productivity"]
 overview: "Break Buddy is a work-break timer designed for busy professionals who struggle to take regular breaks. It helps enforce healthy work boundaries while being flexible enough to fit around meetings and unpredictable schedules."

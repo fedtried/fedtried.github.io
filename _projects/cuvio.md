@@ -1,53 +1,58 @@
 ---
 layout: project
-title: "Cuvio: Smarter Meal Planning"
-role: "Founder"
+title: "AI Meal Planner - Cuvio"
+role: "Product Lead"
 duration: "Ongoing"
 thumbnail: "/assets/images/projects/cuvio-thumb.jpg"
-skills: ["Product Strategy", "UX Research", "Agile Development", "Growth Planning"]
-overview: "Cuvio is a meal-planning app that helps users generate customised meal plans, reduce food waste, and streamline grocery shopping. The goal was to create a simple yet powerful tool that removes decision fatigue while promoting sustainability."
+skills: ["Product Strategy", "UX Research", "Agile Development", "Growth Planning", "App Deployment", "Marketing Analytics"]
+overview: "Cuvio is a SwiftUI-based meal planning app with a Node.js backend on AWS EC2, designed to generate personalized weekly meal plans, reduce food waste, and streamline grocery shopping. It removes decision fatigue while promoting sustainability."
 stats:
-  - value: "80%"
-    label: "Feature Development Completed"
-  - value: "5-10 hrs/week"
+  - value: "1.05%"
+    label: "Apple Search Ads TTR"
+  - value: "6 months"
     label: "Time Invested"
   - value: "0 → 1"
-    label: "Solo-Built MVP"
+    label: "Solo-Built App"
 ---
 
 ## Problem Statement
-Meal planning is time-consuming, and food waste is a costly issue. Many existing solutions are either too rigid or require too much manual input. Users struggle to:  
-- Plan meals that fit their budget and dietary needs.  
-- Minimise ingredient waste while still enjoying variety.  
-- Generate accurate shopping lists without effort.  
-
-## User Stories
-- **As a busy professional**, I want a quick way to generate a meal plan so that I don’t have to spend time deciding what to eat.  
-- **As a cost-conscious user**, I need to optimise ingredient usage to reduce food waste and save money.  
-- **As someone with dietary restrictions**, I want meal plans that automatically adjust to my preferences.  
+Meal planning is time-consuming and food waste is costly. Existing apps are often rigid, require excessive manual input, or fail to account for dietary restrictions. Users struggle to:
+- Generate meal plans that suit their budget, preferences, and household size.
+- Reduce ingredient waste while maintaining variety.
+- Automate grocery lists without repeated effort.
 
 ## Solution
-To address these issues, I designed and developed **Cuvio**, a meal-planning app with:  
-✅ **Smart meal generation** – Balanced meal plans with controlled recipe repetition.  
-✅ **Waste reduction** – Ingredients are optimised to use full package sizes where possible.  
-✅ **Shopping list automation** – Instant lists generated based on planned meals.  
-✅ **Flexible scaling** – Plans adapt based on household size and budget.  
+**Cuvio** solves these problems through:  
+- **Smart Meal Generation** – Personalized weekly meal plans with controlled recipe repetition.  
+- **Automated Grocery Lists** – Lists generated based on meal plans to reduce waste.  
+- **Flexible Scaling** – Recipes adjust to household size and budget.  
+- **Seasonal & Dietary Awareness** – Prioritizes seasonal produce and supports multiple dietary preferences.  
 
-### Approach  
-- **User Research**: Conducted informal interviews and competitor analysis to refine feature priorities.  
-- **Design & Development**: Built a Next.js frontend with Supabase for the backend, integrating Stripe for future monetisation.  
-- **Agile Execution**: Iterated on key features based on testing feedback while balancing solo development constraints.  
-- **Launch Strategy**: Worked on branding, SEO, and social media presence to support the upcoming launch.  
+## Approach
+- **User Research**: Interviews and competitor analysis informed feature prioritization.  
+- **Design & Development**: SwiftUI frontend with Node.js backend deployed on an AWS EC2 cluster.
+- **Agile Execution**: Solo development with iterative releases and user feedback cycles.  
+- **Marketing & Launch**: Branding, keyword optimization, TikTok & Apple Ads campaigns.
 
 ## Impact
-📌 **Currently in pre-launch phase**, but early feedback highlights:  
-- **Users appreciate the automation** – less time planning, more time cooking.  
-- **Scalability is a key differentiator** – adjusting portions and budgets is seamless.  
-- **Potential for growth** – niche competitors lack the same flexibility.  
+- **Apple App Store Conversion Rate:** 3.8%  
+- **TikTok Campaign Download CTR:** 4.3% from 10K views  
+- Early user feedback highlights the app’s automation, flexibility, and usability.  
 
-## Key Learnings  
-🔹 **Prioritisation is crucial** – balancing feature scope and launch timelines is challenging when building solo.  
-🔹 **GTM is its own beast** – strong product execution doesn’t guarantee adoption without a clear marketing strategy.  
-🔹 **User research is ongoing** – real-world usage will refine future iterations.  
+## Key Learnings
+- **Marketing & Targeting Matter Most** – Keyword optimization, audience targeting, and ad campaigns drive adoption.  
+- **Deployment Skills are Crucial** – Learned EC2 instance management, server deployment, and backend scaling.  
+- **User-Centric Product Strategy** – Understanding target users informs features, engagement, and retention.
+
+## Technology Stack
+- **Frontend:** SwiftUI  
+- **Backend:** Node.js  
+- **Deployment:** AWS EC2  
+- **Analytics:** PostHog  
+
+## Future Plans
+- Launch Android version.  
+- Introduce AI-driven recipe suggestions and personalized nutrition insights.  
+- Expand features based on real-world user feedback and engagement metrics.  
 
 ---
