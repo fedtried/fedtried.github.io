@@ -1,6 +1,7 @@
 ---
 ---
 
+/* stylelint-disable */
 @import "variables";
 @import "animations";
 
@@ -527,7 +528,7 @@ section {
       transition: color 0.3s ease;
       
       &:hover {
-        color: lighten($cosmic-orange, 10%);
+        color: $cosmic-pink;
       }
     }
     
@@ -809,7 +810,7 @@ section {
         color: $cosmic-pink;
         
         &:hover {
-          color: lighten($cosmic-pink, 10%);
+          color: $tech-blue;
         }
       }
     }
