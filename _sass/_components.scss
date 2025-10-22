@@ -57,6 +57,17 @@
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     }
     
+    .project-card-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      
+      &:hover .view-details-text .arrow-icon {
+        transform: translateX(2px);
+      }
+    }
+    
     .project-thumbnail {
       height: 200px;
       background-color: $cosmic-purple;
@@ -92,10 +103,75 @@
       margin-right: 5px;
     }
     
-    .project-link {
-      display: inline-block;
+    .project-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       margin-top: $spacing-sm;
+    }
+    
+    .view-details-text {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
       font-weight: 600;
+      color: $tech-blue;
+      transition: all 0.3s ease;
+      
+      .arrow-icon {
+        transition: transform 0.3s ease;
+      }
+    }
+    
+    .external-links {
+      display: flex;
+      gap: 8px;
+    }
+    
+    .project-external-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background-color: rgba($cosmic-purple, 0.1);
+      color: $cosmic-purple;
+      text-decoration: none;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      flex-shrink: 0;
+      
+      &:hover {
+        background-color: rgba($cosmic-purple, 0.2);
+        transform: scale(1.1);
+        box-shadow: 0 4px 12px rgba($cosmic-purple, 0.3);
+      }
+      
+      .link-icon, .github-icon {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  
+  /* Project detail page specific styles */
+  .project-detail {
+    .project-actions {
+      margin: $spacing-lg 0;
+      justify-content: flex-start;
+    }
+    
+    .project-external-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      font-size: $font-base;
+      
+      .link-icon {
+        width: 16px;
+        height: 16px;
+      }
     }
   }
   

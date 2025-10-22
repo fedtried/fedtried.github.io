@@ -4,6 +4,7 @@ title: "AI Meal Planner - Cuvio"
 role: "Product Lead"
 duration: "Ongoing"
 thumbnail: "/assets/images/projects/cuvio-thumb.jpg"
+link: "https://apps.apple.com/us/app/cuvio-easy-meal-planning/id6745519272"
 skills: ["Product Strategy", "UX Research", "Agile Development", "Growth Planning", "App Deployment", "Marketing Analytics"]
 overview: "Cuvio is a SwiftUI-based meal planning app with a Node.js backend on AWS EC2, designed to generate personalized weekly meal plans, reduce food waste, and streamline grocery shopping. It removes decision fatigue while promoting sustainability."
 stats:
