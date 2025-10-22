@@ -1,59 +1,93 @@
 /* Responsive styles */
 @media (max-width: $breakpoint-lg) {
-    .hero-section {
-      .hero-visual {
-        width: 40%;
+  .hero-section {
+    .hero-content {
+      .hero-intro h1 {
+        font-size: 3rem;
       }
     }
     
-    .about-content,
-    .contact-content {
-      flex-direction: column;
-    }
-    
-    .about-image {
-      margin-top: $spacing-lg;
-    }
-  }
-  
-  @media (max-width: $breakpoint-md) {
-    .site-header {
-      .main-nav {
-        display: none; /* We'll need to add a mobile menu later */
-      }
-    }
-    
-    .hero-section {
-      .hero-visual {
-        display: none;
-      }
-      
-      .hero-content {
-        max-width: 100%;
-      }
-    }
-    
-    .skills-grid,
-    .projects-grid {
+    .hero-highlights {
       grid-template-columns: 1fr;
     }
   }
   
-  @media (max-width: $breakpoint-sm) {
-    h1 {
-      font-size: 2rem;
-    }
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .hero-section {
+    padding: 4rem 0;
     
-    h2 {
-      font-size: 1.5rem;
-    }
-    
-    .hero-cta {
-      flex-direction: column;
-      gap: $spacing-sm;
+    .hero-content {
+      .hero-intro h1 {
+        font-size: 2.5rem;
+      }
       
-      .btn {
-        width: 100%;
+      .tagline {
+        font-size: 1.1rem;
       }
     }
   }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .hero-section {
+    padding: 3rem 0;
+    
+    .hero-content {
+      .hero-intro h1 {
+        font-size: 2rem;
+      }
+      
+      .tagline {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .skill-card,
+  .project-card {
+    padding: 1.5rem;
+  }
+  
+  .contact-card {
+    padding: 2rem;
+  }
+}

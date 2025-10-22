@@ -1,6 +1,9 @@
 <section id="projects" class="projects-section">
     <div class="container">
-      <h2>Project Showcase</h2>
+      <div class="section-header">
+        <h2>Featured Work</h2>
+      </div>
+      
       <div class="projects-grid">
         {% assign projects = site.projects | sort: 'date' | reverse %}
         {% for project in projects %}
@@ -12,18 +15,28 @@
               {% else %}
               <div class="thumbnail-placeholder"></div>
               {% endif %}
+              <div class="project-overlay">
+                <span class="project-status">{{ project.duration }}</span>
+              </div>
             </div>
             <div class="project-info">
-              <h3>{{ project.title }}</h3>
-              <p class="project-role">{{ project.role }}</p>
+              <div class="project-header">
+                <h3>{{ project.title }}</h3>
+                <p class="project-role">{{ project.role }}</p>
+              </div>
+              
+              <p class="project-overview">{{ project.overview | truncate: 120 }}</p>
+              
+              
               <div class="project-skills">
-                {% for skill in project.skills limit:3 %}
+                {% for skill in project.skills limit:4 %}
                 <span class="skill-tag">{{ skill }}</span>
                 {% endfor %}
               </div>
+              
               <div class="project-actions">
                 <span class="view-details-text">
-                  View Details
+                  View Case Study
                   <svg class="arrow-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>

@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "AI Meal Planner - Cuvio"
-role: "Product Lead"
+role: "Founder & Product Lead"
 duration: "Ongoing"
 thumbnail: "/assets/images/projects/cuvio-thumb.jpg"
 link: "https://apps.apple.com/us/app/cuvio-easy-meal-planning/id6745519272"

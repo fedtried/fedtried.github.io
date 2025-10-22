@@ -2,7 +2,7 @@
 layout: project
 title: "AI Spending Analyser"
 role: "Full-Stack Developer"
-duration: "T212 Task"
+duration: "Completed"
 thumbnail: "/assets/images/projects/spending.png"
 link: "https://spending-analyser.streamlit.app/"
 github: "https://github.com/fedtried/spending-analyser"
@@ -79,8 +79,6 @@ Target users are financially curious millennials and Gen Z (25–40) who use Mon
 
 ## Impact
 
-- **Live Demo Available** - [spending-analyser.streamlit.app](https://spending-analyser.streamlit.app/)
-- **Open Source** - Full source code available on GitHub
 - **Privacy-Focused** - No data collection or storage
 - **Accessible** - Simple interface requiring minimal clicks to get value
 
