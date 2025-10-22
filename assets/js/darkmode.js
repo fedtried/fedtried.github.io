@@ -16,10 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update button text
     function updateButtonText() {
       if (body.classList.contains('dark-mode')) {
-        darkModeToggle.innerHTML = '☀️';
         darkModeToggle.setAttribute('aria-label', 'Switch to light mode');
       } else {
-        darkModeToggle.innerHTML = '🌙';
         darkModeToggle.setAttribute('aria-label', 'Switch to dark mode');
       }
     }

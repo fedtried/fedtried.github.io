@@ -3,14 +3,45 @@ body.dark-mode {
     background-color: $text-dark;
     color: $background-white;
     
+    /* Header and Footer */
     .site-header, .site-footer {
       background-color: darken($text-dark, 3%);
     }
     
+    .site-header {
+      border-bottom-color: lighten($text-dark, 10%);
+      
+      .logo {
+        color: $background-white;
+        
+        &:hover {
+          color: $accent-purple;
+        }
+      }
+      
+      .main-nav ul li a {
+        color: $background-white;
+        
+        &:hover {
+          color: $accent-purple;
+        }
+      }
+      
+      .dark-mode-toggle:hover {
+        background: lighten($text-dark, 10%);
+      }
+    }
+    
+    /* Typography */
     h1, h2, h3, h4, h5, h6 {
       color: $background-white;
     }
     
+    p, .tagline, .lead {
+      color: lighten($text-dark, 40%);
+    }
+    
+    /* Links */
     a {
       color: $accent-purple;
       
@@ -19,14 +50,403 @@ body.dark-mode {
       }
     }
     
-    .skill-card, .project-card, .contact-form {
-      background-color: lighten($text-dark, 5%);
-      border-color: $accent-purple;
+    /* Hero Section */
+    .hero-section {
+      background: linear-gradient(135deg, darken($text-dark, 5%) 0%, $text-dark 100%);
+      
+      .hero-subtitle {
+        color: $accent-purple;
+      }
+      
+      h1 {
+        background: linear-gradient(135deg, $background-white, lighten($text-dark, 40%));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
     }
     
-    input, textarea {
+    /* About Section */
+    .about-section {
+      background-color: $text-dark;
+      
+      .lead {
+        background-color: lighten($text-dark, 5%);
+        border-left-color: $accent-purple;
+        color: lighten($text-dark, 40%);
+      }
+      
+      .philosophy-item {
+        background-color: lighten($text-dark, 5%);
+        border-color: lighten($text-dark, 10%);
+        
+        &:hover {
+          background-color: lighten($text-dark, 8%);
+          border-color: $accent-purple;
+        }
+      }
+    }
+    
+    /* Skills Section */
+    .skills-section {
+      background-color: $text-dark;
+    }
+    
+    .skill-card {
+      background-color: lighten($text-dark, 5%);
+      border-color: lighten($text-dark, 10%);
+      
+      &:hover {
+        background-color: lighten($text-dark, 8%);
+        border-color: $accent-purple;
+      }
+      
+      .skill-icon {
+        color: $accent-purple;
+      }
+      
+      h3 {
+        color: $background-white;
+      }
+      
+      p {
+        color: lighten($text-dark, 40%);
+      }
+    }
+    
+    /* Projects Section */
+    .projects-section {
+      background-color: $text-dark;
+    }
+    
+    .project-card {
+      background-color: lighten($text-dark, 5%);
+      border-color: lighten($text-dark, 10%);
+      
+      &:hover {
+        background-color: lighten($text-dark, 8%);
+        border-color: $accent-purple;
+      }
+      
+      .project-content {
+        h3 {
+          color: $background-white;
+        }
+        
+        p {
+          color: lighten($text-dark, 40%);
+        }
+      }
+    }
+    
+    /* Contact Section */
+    .contact-section {
+      background-color: $text-dark;
+    }
+    
+    .contact-form, .contact-card {
+      background-color: lighten($text-dark, 5%);
+      border-color: lighten($text-dark, 10%);
+    }
+    
+    /* Form Elements */
+    input, textarea, select {
       background-color: lighten($text-dark, 10%);
-      border-color: $accent-purple;
+      border-color: lighten($text-dark, 20%);
+      color: $background-white;
+      
+      &:focus {
+        border-color: $accent-purple;
+        box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+      }
+      
+      &::placeholder {
+        color: lighten($text-dark, 30%);
+      }
+    }
+    
+    /* Buttons */
+    .btn {
+      &.btn-primary {
+        background: linear-gradient(135deg, $accent-purple, lighten($accent-purple, 10%));
+        color: $background-white;
+        
+        &:hover {
+          background: linear-gradient(135deg, lighten($accent-purple, 10%), $accent-purple);
+        }
+      }
+      
+      &.btn-secondary {
+        background-color: lighten($text-dark, 10%);
+        color: $accent-purple;
+        border-color: $accent-purple;
+        
+        &:hover {
+          background-color: $accent-purple;
+          color: $background-white;
+        }
+      }
+    }
+    
+    /* Tags */
+    .tag {
+      background-color: lighten($text-dark, 15%);
+      color: $accent-purple;
+      border: 1px solid $accent-purple;
+      
+      &:hover {
+        background-color: $accent-purple;
+        color: $background-white;
+      }
+    }
+    
+    /* Section Headers */
+    .section-header {
+      h2 {
+        color: $background-white;
+      }
+      
+      .section-subtitle {
+        color: lighten($text-dark, 40%);
+      }
+    }
+    
+    /* Hero Section Enhancements */
+    .hero-cta {
+      .btn {
+        &:hover {
+          transform: translateY(-2px);
+        }
+      }
+    }
+    
+    .hero-visual {
+      .tech-constellation {
+        opacity: 0.3;
+      }
+    }
+    
+    /* Project Card Enhancements */
+    .project-card {
+      .project-thumbnail {
+        .project-overlay {
+          .project-status {
+            background-color: lighten($text-dark, 20%);
+            color: $accent-purple;
+          }
+        }
+      }
+      
+      .project-header {
+        h3 {
+          color: $background-white;
+        }
+        
+        .project-role {
+          color: $accent-purple;
+        }
+      }
+      
+      .project-overview {
+        color: lighten($text-dark, 40%);
+      }
+      
+      .project-skills {
+        .skill-tag {
+          background-color: lighten($text-dark, 15%);
+          color: $accent-purple;
+          border: 1px solid $accent-purple;
+        }
+      }
+      
+      .project-actions {
+        .view-details-text {
+          color: $accent-purple;
+          
+          &:hover {
+            color: $secondary-blue;
+          }
+        }
+        
+        .project-external-link {
+          background-color: lighten($text-dark, 15%);
+          color: $accent-purple;
+          border-color: lighten($text-dark, 20%);
+          
+          &:hover {
+            background-color: $accent-purple;
+            color: $background-white;
+          }
+        }
+      }
+    }
+    
+    /* Contact Section Enhancements */
+    .contact-card {
+      .contact-intro {
+        h2 {
+          color: $background-white;
+        }
+        
+        p {
+          color: lighten($text-dark, 40%);
+        }
+      }
+      
+      .contact-methods {
+        .contact-method {
+          background-color: lighten($text-dark, 8%);
+          border-color: lighten($text-dark, 15%);
+          
+          &:hover {
+            background-color: lighten($text-dark, 12%);
+            border-color: $accent-purple;
+          }
+          
+          .method-icon {
+            background-color: $accent-purple;
+            color: $background-white;
+          }
+          
+          .method-content {
+            h4 {
+              color: $background-white;
+            }
+            
+            a {
+              color: $accent-purple;
+              
+              &:hover {
+                color: $secondary-blue;
+              }
+            }
+            
+            p {
+              color: lighten($text-dark, 30%);
+            }
+          }
+        }
+      }
+      
+      .contact-cta {
+        .availability {
+          color: lighten($text-dark, 30%);
+        }
+      }
+    }
+    
+    /* Footer Enhancements */
+    .site-footer {
+      background-color: darken($text-dark, 5%);
+      border-top: 1px solid lighten($text-dark, 10%);
+      
+      .footer-content {
+        p {
+          color: lighten($text-dark, 40%);
+        }
+        
+        .social-links {
+          a {
+            color: lighten($text-dark, 40%);
+            
+            &:hover {
+              color: $accent-purple;
+            }
+          }
+        }
+      }
+    }
+    
+    /* Form Elements */
+    .form-group {
+      label {
+        color: $background-white;
+      }
+      
+      input, textarea, select {
+        background-color: lighten($text-dark, 10%);
+        border-color: lighten($text-dark, 20%);
+        color: $background-white;
+        
+        &:focus {
+          border-color: $accent-purple;
+          box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+        }
+        
+        &::placeholder {
+          color: lighten($text-dark, 30%);
+        }
+      }
+    }
+    
+    /* Additional Text Elements */
+    span, div, li, ul, ol {
+      color: inherit;
+    }
+    
+    /* Code Elements */
+    code {
+      background-color: lighten($text-dark, 15%);
+      color: $accent-purple;
+    }
+    
+    pre {
+      background-color: lighten($text-dark, 10%);
+      border-left-color: $accent-purple;
+      
+      code {
+        background-color: transparent;
+        color: $background-white;
+      }
+    }
+    
+    /* Blockquotes */
+    blockquote {
+      background-color: lighten($text-dark, 8%);
+      border-left-color: $accent-purple;
+      color: lighten($text-dark, 40%);
+    }
+    
+    /* Tables */
+    table {
+      background-color: lighten($text-dark, 5%);
+      
+      th, td {
+        border-color: lighten($text-dark, 15%);
+        color: $background-white;
+      }
+      
+      th {
+        background-color: lighten($text-dark, 10%);
+      }
+    }
+    
+    /* Scrollbar Styling */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: lighten($text-dark, 5%);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: $accent-purple;
+      border-radius: 4px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: lighten($accent-purple, 10%);
+    }
+    
+    /* Selection */
+    ::selection {
+      background-color: rgba(139, 92, 246, 0.3);
+      color: $background-white;
+    }
+    
+    ::-moz-selection {
+      background-color: rgba(139, 92, 246, 0.3);
       color: $background-white;
     }
   }
